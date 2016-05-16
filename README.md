@@ -7,7 +7,7 @@ Gate ID is an app to make easy to integrate with Gate ID SSO.
 Quick start
 -----------
 
-1. Add "gate_id" to your INSTALLED_APPS setting like this::
+1. Add "gate_id" to your INSTALLED_APPS setting like this:
 
     INSTALLED_APPS = [
         ...
