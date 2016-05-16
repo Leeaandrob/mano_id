@@ -15,8 +15,7 @@ class GateSessionMiddleware(object):
             gate_id = request.COOKIES.get(settings.GATE_COOKIE_NAME)
             gate_user = requests.get(
                 settings.GATE_ID_URL,
-                cookies = {settings.GATE_COOKIE_NAME: gate_id},
-                verify = 'certs.pem'
+                cookies = {settings.GATE_COOKIE_NAME: gate_id}
             ).json()
 
             if gate_user:
