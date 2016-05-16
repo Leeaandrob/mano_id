@@ -1,10 +1,10 @@
 import requests
 from unipath import Path
 
-from django.conf import settings
 from django.contrib.auth import authenticate, login, get_user_model
 from django.utils.functional import SimpleLazyObject
 
+from gate_id import settings
 
 User = get_user_model()
 
