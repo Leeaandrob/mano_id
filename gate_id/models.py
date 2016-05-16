@@ -30,6 +30,8 @@ class EmailUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
+    objects = EmailUserManager()
+
     uuid = models.CharField(max_length=36, default=uuid4)
     first_name = models.CharField(_('first name'), max_length=30, blank=True)
     last_name = models.CharField(_('last name'), max_length=30, blank=True)
@@ -67,8 +69,4 @@ class User(AbstractBaseUser):
     def has_module_perms(self, app_label):
         return self.is_superuser
 
-    objects = EmailUserManager()
-
-    REQUIRED_FIELDS = ['email']
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
