@@ -23,12 +23,14 @@ Quick start
         ...
         'gate_id.middleware.GateSessionMiddleware',
     )
+4. Set LOGIN_URL to match Gate ID login URL:
+    LOGIN_URL = '/login/'
 
-4. Use Gate ID User Model:
+5. Use Gate ID User Model:
     AUTH_USER_MODEL = 'gate_id.User'
 
-5. Include the gate_id URLconf in your project urls.py like this::
+6. Include the gate_id URLconf in your project urls.py like this::
 
     url(r'^', include(gate_id.urls, namespace='gate_id')),
 
-6. Run `python manage.py migrate` to create the Gate ID models.
+7. Run `python manage.py migrate` to create the Gate ID models.
