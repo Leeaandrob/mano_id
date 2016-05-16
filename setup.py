@@ -30,4 +30,8 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
+     install_requires=[
+        'requests==2.9.1',
+        'unipath==1.1',
+    ]
 )
