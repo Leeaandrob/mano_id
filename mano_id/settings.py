@@ -1,7 +1,7 @@
 from django.conf import settings
 
-GATE_URL = settings.GATE_URL
-GATE_COOKIE_NAME = getattr(settings, 'GATE_COOKIE_NAME', 'gateid')
-GATE_ID_URL = getattr(settings, 'GATE_ID_URL', GATE_URL + "me/")
-GATE_LOGIN_URL =  getattr(settings, 'GATE_LOGIN_URL', GATE_URL + "login/")
-GATE_LOGOUT_URL =  getattr(settings, 'GATE_LOGOUT_URL',  GATE_URL + "logout/")
+MANO_URL = settings.MANO_URL
+MANO_COOKIE_NAME = getattr(settings, 'MANO_COOKIE_NAME', 'manoid')
+MANO_ID_URL = getattr(settings, 'MANO_ID_URL', MANO_URL + "me/")
+MANO_LOGIN_URL = getattr(settings, 'MANO_LOGIN_URL', MANO_URL + "login/")
+MANO_LOGOUT_URL = getattr(settings, 'MANO_LOGOUT_URL',  MANO_URL + "logout/")
