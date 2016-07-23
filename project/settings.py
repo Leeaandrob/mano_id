@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gate_id',
+    'mano_id',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -121,4 +121,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = 'gate_id.User'
+AUTH_USER_MODEL = 'mano_id.User'
